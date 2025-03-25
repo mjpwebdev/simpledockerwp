@@ -13,11 +13,11 @@ configure_wp_config() {
   local db_user="$2"
   local db_password="$3"
   local db_host="$4"
-  cp wp-config-sample.php wp-config.php
-  sed -i "" "s/database_name_here/$db_name/" wp-config.php
-  sed -i "" "s/username_here/$db_user/" wp-config.php
-  sed -i "" "s/password_here/$db_password/" wp-config.php
-  sed -i "" "s/127.0.0.1/$db_host/" wp-config.php
+  cp wordpress/wp-config-sample.php wordpress/wp-config.php
+  sed -i "" "s/database_name_here/$db_name/" wordpress/wp-config.php
+  sed -i "" "s/username_here/$db_user/" wordpress/wp-config.php
+  sed -i "" "s/password_here/$db_password/" wordpress/wp-config.php
+  sed -i "" "s/127.0.0.1/$db_host/" wordpress/wp-config.php
 }
 > .env
 prompt_input "MYSQL_DATABASE" "Enter MySQL database name" "db"
