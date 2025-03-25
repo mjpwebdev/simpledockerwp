@@ -9,7 +9,7 @@ services:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_TCP_PORT: ${MYSQL_TCP_PORT}
     ports:
-      - 3308:3308
+      - ${MYSQL_TCP_PORT}:${MYSQL_TCP_PORT}
     volumes:
       - my-db:/var/lib/mysql
 networks:
