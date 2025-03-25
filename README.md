@@ -1,4 +1,4 @@
-# WordPress Setup on Mac with Docker
+# WordPress Starter on Mac with Docker
 
 This project provides a starter template for setting up WordPress on a Mac using Docker. It simplifies the process of getting a WordPress environment up and running, allowing you to focus on developing your site.
 
